@@ -27,7 +27,7 @@ footer{
 /* Inicio estrutura interna */
 main{
     grid-area: principal;
-    height: 100vh;
+    height: max-content;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #F0F4F8;
@@ -35,12 +35,17 @@ main{
     grid-template-areas: 
         'sobre imagem'
         'skills skills'
+        'projetos projetos'
         'contato contato'
+        
     ;
 }
 
 section#sobre{
     grid-area: sobre;
+}
+section#projetos{
+    grid-area: projetos;
 }
 section#imagem{
     margin: 1.2rem;
@@ -69,7 +74,7 @@ section > ul{
 section > ul li:hover{
     flex-wrap: wrap;
     background-color: #CBD5E1;
-    padding: 0.7rem; /*Usar 0.2 no media queries*/
+    padding: 0.4rem; /*Usar 0.2 no media queries*/
     border-radius: 25px;
 }
 section > ul li a{
@@ -91,7 +96,7 @@ section#contato-rede{
 
 
 /* Inicio ajustes com flex-box */
-#skills, #contato-rede{
+#skills, #contato-rede, #projetos{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,12 +109,40 @@ section#contato-rede{
     justify-content: center;
     align-items: center;
 }
+
+.projetos-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+.projeto-card{
+    padding: 0 1rem;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 2rem;
+}
+.projeto-card > a{
+    text-decoration: none;
+    color: #2563EB;
+}
+
+.projeto-card >a:hover{
+    background-color: #CBD5E1;
+    padding: 0.4rem; /*Usar 0.2 no media queries*/
+    border-radius: 25px;
+}
 /* Fim ajustes com flex-box */
 
 /* Inicio tipografia */
 h2, h1{
     margin: 1rem;
-    font-size: 2.1rem;
+    font-size: 1.7rem;
     color: #3B82F6;
 }
 
@@ -143,6 +176,7 @@ p{
                 'sobre'
                 'imagem'
                 'skills'
+                'projetos'
                 'contato'
             ;
             
@@ -154,12 +188,31 @@ p{
             border-radius: 25px;
         }
 
+        section > ul li{
+            font-size: 1rem;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        .projeto-card{
+            font-size: 1rem;
+            border: 2px solid black;
+            width: 50%;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        
+      
         section > ul li:hover{
             padding: 0.2rem;
         }
 
         h3{
-            font-size: 1.8rem;
+            font-size: 1.3rem;
+        }
+     
+        p{
+            font-size: 1.3rem;
         }
     }
 /* Fim responsividade */
