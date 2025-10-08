@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #C9DCB3;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    justify-content: space-around;
+    font-size: 1.1rem;
+}
+header > h1{
+    padding: 0.5rem;
+    color: #555358;
+}
+header > nav > ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 2px solid black; */
+    padding: 0.3rem;
+}
+li{
+    padding: 0.3rem;
+}
+li > a{
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 25px;
+    color: #555358;
+    text-decoration: none;
+}
