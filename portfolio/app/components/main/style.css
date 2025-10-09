@@ -1,50 +1,107 @@
-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-        "titulo-sobre titulo-sobre"
-        "section-sobre section-imagem"
-        "titulo-stack titulo-stack"
-    ;
-    
+body{
+    margin: 0;
+    padding: 0;
 }
 
-.titulo-sobre{
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "titulo-sobre titulo-sobre"
+    "section-sobre section-imagem"
+    "titulo-stack titulo-stack";
+}
+
+.titulo-sobre {
+  grid-area: titulo-sobre;
+  display: flex;
+  justify-content: center;
+}
+.titulo-stack {
+  grid-area: titulo-stack;
+  display: flex;
+  justify-content: center;
+}
+
+.section-imagem {
+  grid-area: section-imagem;
+  margin: 1.5rem;
+  display: flex;
+  /* border: 2px solid purple; */
+  justify-content: center;
+}
+
+.section-sobre {
+  /* border: 2px solid purple; */
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem;
+}
+
+.section-sobre > p {
+  font-size: 1.3rem;
+  display: flex;
+  align-self: center;
+  padding: 2rem;
+  grid-area: section-sobre;
+  /* border: 2px solid purple; */
+}
+
+.section-imagem > img {
+  border-radius: 20px;
+  width: 500;
+    height: 300px;
+}
+
+@media (max-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "titulo-sobre"
+      "section-sobre"
+      "section-imagem"
+      "titulo-stack";
+  }
+
+  .titulo-sobre {
     grid-area: titulo-sobre;
     display: flex;
     justify-content: center;
-}
-.titulo-stack{
+  }
+  .titulo-stack {
     grid-area: titulo-stack;
     display: flex;
     justify-content: center;
-}
+  }
 
-
-.section-imagem{
+  .section-imagem {
     grid-area: section-imagem;
-    margin: 1.5rem;
+    margin: 1rem;
     display: flex;
     /* border: 2px solid purple; */
     justify-content: center;
-}
+  }
 
-.section-sobre{
+  .section-sobre {
     /* border: 2px solid purple; */
     display: flex;
     justify-content: center;
-    margin: 1.5rem;
-}
+    margin: 1rem;
+  }
 
-.section-sobre > p{
-    font-size: 1.3rem;
+  .section-sobre > p {
+    font-size: 1.2rem;
     display: flex;
     align-self: center;
-    padding: 2.0rem;
+    padding: 2rem;
     grid-area: section-sobre;
     /* border: 2px solid purple; */
-}
+  }
 
-.section-imagem > img{
+  .section-imagem > img {
     border-radius: 20px;
+    width: 350px;
+    height: 300px;
+  }
 }
