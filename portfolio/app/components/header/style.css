@@ -1,76 +1,84 @@
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-header{
+header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: #c9dcb3;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  justify-content: space-around;
+  font-size: 1.1rem;
+  /* padding-inline: 0.5rem; */
+}
+header > h1 {
+  padding: 0.5rem;
+  color: #555358;
+}
+header > nav > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* border: 2px solid black; */
+  padding: 0.3rem;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+li {
+  padding: 0.3rem;
+}
+li > a {
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 25px;
+  color: #555358;
+  text-decoration: none;
+}
+
+@media (max-width: 667px) {
+  header {
     display: flex;
+    flex-direction: row;
     width: 100%;
+    overflow-x: hidden;
     align-items: center;
-    background-color: #C9DCB3;
+    background-color: #c9dcb3;
     position: sticky;
     z-index: 1;
     top: 0;
     justify-content: space-around;
-    font-size: 1.1rem;
-}
-header > h1{
-    padding: 0.5rem;
+    padding-inline: 0.5rem;
+
+    font-size: 1rem;
+  }
+  header > h1 {
+    /* padding: 0.1rem; */
     color: #555358;
-}
-header > nav > ul{
+  }
+  header > nav > ul {
     list-style-type: none;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     /* border: 2px solid black; */
     padding: 0.3rem;
-}
-li{
-    padding: 0.3rem;
-}
-li > a{
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  li {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+  li > a {
     padding: 0.5rem;
     background-color: white;
     border-radius: 25px;
     color: #555358;
     text-decoration: none;
-}
-
-@media (max-width: 768px) {
-  
-  header{
-      display: flex;
-      width: 100vw;
-      align-items: center;
-      background-color: #C9DCB3;
-      position: sticky;
-      z-index: 1;
-      top: 0;
-      justify-content: space-around;
-      font-size: 1.1rem;
-  }
-  header > h1{
-      padding: 0.2rem;
-      color: #555358;
-  }
-  header > nav > ul{
-      list-style-type: none;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      /* border: 2px solid black; */
-      margin: 1.3rem;
-  }
-  li{
-      padding: 0.7rem;
-  }
-  li > a{
-      padding: 0.5rem;
-      background-color: white;
-      border-radius: 25px;
-      color: #555358;
-      text-decoration: none;
   }
 }
-

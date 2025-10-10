@@ -1,6 +1,6 @@
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 main {
@@ -9,7 +9,8 @@ main {
   grid-template-areas:
     "titulo-sobre titulo-sobre"
     "section-sobre section-imagem"
-    "titulo-stack titulo-stack";
+    "titulo-stack titulo-stack"
+    "section-stack section-stack";
 }
 
 .titulo-sobre {
@@ -20,6 +21,15 @@ main {
 .titulo-stack {
   grid-area: titulo-stack;
   display: flex;
+  justify-content: center;
+}
+
+.section-stack {
+  grid-area: section-stack;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  /* border: 2px solid purple; */
   justify-content: center;
 }
 
@@ -43,14 +53,17 @@ main {
   display: flex;
   align-self: center;
   padding: 2rem;
+  text-align: center;
   grid-area: section-sobre;
   /* border: 2px solid purple; */
 }
 
 .section-imagem > img {
   border-radius: 20px;
-  width: 500;
-    height: 300px;
+  width: 100%;
+  max-width: 500px; /* não ultrapassa o limite, mas é responsiva */
+  height: auto;
+  display: block;
 }
 
 @media (max-width: 768px) {
@@ -61,20 +74,28 @@ main {
       "titulo-sobre"
       "section-sobre"
       "section-imagem"
-      "titulo-stack";
+      "titulo-stack"
+      "section-stack";
   }
 
   .titulo-sobre {
     grid-area: titulo-sobre;
     display: flex;
+    /* border: 2px solid black; */
+    margin: 0.5rem auto;
+    text-align: center;
+    align-items: center;
     justify-content: center;
   }
   .titulo-stack {
     grid-area: titulo-stack;
     display: flex;
+    margin: 0.5rem auto;
     justify-content: center;
   }
-
+  .section-stack {
+    grid-area: section-stack;
+  }
   .section-imagem {
     grid-area: section-imagem;
     margin: 1rem;

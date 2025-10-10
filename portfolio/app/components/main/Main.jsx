@@ -1,4 +1,5 @@
 import style from "./style.css";
+import Stack from "../stack/Stack.jsx";
 
 export default function Main() {
   return (
@@ -34,6 +35,9 @@ export default function Main() {
             <h1>Stack</h1>
         </div>
       {/* stack */}
+      <section className="section-stack">
+        <Stack/>        
+      </section>
     </main>
   );
 }

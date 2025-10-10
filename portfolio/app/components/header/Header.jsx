@@ -7,7 +7,7 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <a href="#sobre">Sobre mim</a>
+            <a href="#sobre">Sobre</a>
           </li>
           <li>
             <a href="#stack">Stack</a>
