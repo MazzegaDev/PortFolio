@@ -10,9 +10,25 @@ main {
     "titulo-sobre titulo-sobre"
     "section-sobre section-imagem"
     "titulo-stack titulo-stack"
-    "section-stack section-stack";
+    "section-stack section-stack"
+    "titulo-projeto titulo-projeto"
+    "section-projeto section-projeto";
 }
 
+.section-projeto {
+  grid-area: section-projeto;
+  /* border: 2px solid purple; */
+
+  display: flex;
+  justify-content: center;
+  /* margin: 1.5rem; */
+}
+
+.titulo-projeto {
+  grid-area: titulo-projeto;
+  display: flex;
+  justify-content: center;
+}
 .titulo-sobre {
   grid-area: titulo-sobre;
   display: flex;
@@ -23,14 +39,19 @@ main {
   display: flex;
   justify-content: center;
 }
-
+.titulo-sobre h1, .titulo-projeto h1, .titulo-stack h1{
+  background-color: rgb(240, 240, 205);
+  border: 2px solid #c9dcb3;
+  border-radius: 25px;
+  padding: 0.5rem;
+}
 .section-stack {
   grid-area: section-stack;
   display: flex;
   flex-direction: row;
   /* border: 2px solid purple; */
   justify-content: space-around;
-  background-color: rgba(240, 240, 205, 0.747);
+  /* background-color: rgba(240, 240, 205, 0.747); */
 }
 
 .section-imagem {
@@ -61,7 +82,7 @@ main {
 .section-imagem > img {
   border-radius: 20px;
   width: 100%;
-  max-width: 500px; /* não ultrapassa o limite, mas é responsiva */
+  max-width: 500px; 
   height: auto;
   display: block;
 }
@@ -75,7 +96,9 @@ main {
       "section-sobre"
       "section-imagem"
       "titulo-stack"
-      "section-stack";
+      "section-stack"
+      "titulo-projeto"
+      "section-projeto";
   }
 
   .titulo-sobre {
@@ -94,6 +117,22 @@ main {
     justify-content: center;
     flex-wrap: wrap;
   }
+  .section-projeto {
+    grid-area: section-projeto;
+    /* border: 2px solid purple; */
+
+    display: flex;
+    justify-content: center;
+    /* margin: 1.5rem; */
+  }
+
+  .titulo-projeto {
+    grid-area: titulo-projeto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+  }
   .section-stack {
     grid-area: section-stack;
     /* margin: 1rem; */
@@ -106,7 +145,7 @@ main {
     padding-inline: 0.5rem;
     overflow: hidden;
     justify-content: space-around;
-    background-color: rgba(240, 240, 205, 0.747);
+    /* background-color: rgba(240, 240, 205, 0.747); */
   }
   .section-imagem {
     grid-area: section-imagem;

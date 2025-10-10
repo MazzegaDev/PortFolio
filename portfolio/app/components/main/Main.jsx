@@ -1,5 +1,6 @@
 import style from "./style.css";
 import Stack from "../stack/Stack.jsx";
+import Projetos from "../projetos/Projetos";
 
 export default function Main() {
   return (
@@ -21,23 +22,33 @@ export default function Main() {
       </section>
 
       <section className="section-imagem">
-        <img 
-        src="/rahul-mishra-glmeeU0zabw-unsplash.jpg" 
-        alt=""
-        width={500}
-        height={300}
+        <img
+          src="/rahul-mishra-glmeeU0zabw-unsplash.jpg"
+          alt=""
+          width={500}
+          height={300}
         />
       </section>
       {/* sobre */}
 
       {/* stack */}
-        <div className="titulo-stack" id="stack">
-            <h1>Stack</h1>
-        </div>
-      {/* stack */}
+      <div className="titulo-stack" id="stack">
+        <h1>Stack</h1>
+      </div>
       <section className="section-stack">
-        <Stack/>        
+        <Stack />
       </section>
+
+      {/* stack */}
+
+      {/* projetos  */}
+      <div className="titulo-projeto" id="projetos">
+        <h1>Projetos</h1>
+      </div>
+      <section className="section-projeto">
+        <Projetos/>
+      </section>
+      {/* projetos */}
     </main>
   );
 }
