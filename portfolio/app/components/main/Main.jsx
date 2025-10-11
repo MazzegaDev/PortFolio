@@ -1,10 +1,13 @@
 import style from "./style.css";
 import Stack from "../stack/Stack.jsx";
 import Projetos from "../projetos/Projetos";
+import Footer from "../footer/Footer";
+
 
 export default function Main() {
   return (
     <main>
+
       {/* sobre */}
       <div className="titulo-sobre" id="sobre">
         <h1>Sobre mim</h1>
@@ -49,6 +52,9 @@ export default function Main() {
         <Projetos/>
       </section>
       {/* projetos */}
+
+      <Footer/>
     </main>
+    
   );
 }

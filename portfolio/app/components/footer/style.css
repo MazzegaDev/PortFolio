@@ -1,0 +1,36 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.lista-contatos{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.lista-contatos > li{
+    margin: 0;
+    padding: 0;
+}
+
+.links{
+    background-color: rgb(201, 220, 179);
+}
+footer{
+    background-color: rgb(201, 220, 179);
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* padding: 0.5rem; */
+}
+h1{
+    color: #555358;
+}
+.div-contatos{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}

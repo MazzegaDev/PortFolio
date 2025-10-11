@@ -4,31 +4,28 @@ body {
 }
 
 .section-card {
- padding: 0.5rem;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    margin: 1.2rem;
-    border-radius: 25px;
-    background-color: rgba(240, 240, 205, 0.747);
-    border: 2px solid #c9dcb3;
+  padding: 0.5rem;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.2rem;
+  border-radius: 25px;
+  background-color: rgba(240, 240, 205, 0.747);
+  border: 2px solid #c9dcb3;
 }
 
 .section-card > ul {
   list-style-type: none;
   /* border: 2px solid black; */
   display: flex;
-  /* flex-direction: row; */
   padding: 0.5rem;
-  justify-content: flex-start;
   margin: 1.2rem;
 }
 .section-card ul > li {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   /* border: 2px solid red; */
   margin: 0.2rem;
 }

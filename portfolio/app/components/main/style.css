@@ -12,7 +12,8 @@ main {
     "titulo-stack titulo-stack"
     "section-stack section-stack"
     "titulo-projeto titulo-projeto"
-    "section-projeto section-projeto";
+    "section-projeto section-projeto"
+    "footer footer";
 }
 
 .section-projeto {
@@ -87,6 +88,7 @@ main {
   display: block;
 }
 
+
 @media (max-width: 768px) {
   main {
     display: grid;
@@ -98,7 +100,8 @@ main {
       "titulo-stack"
       "section-stack"
       "titulo-projeto"
-      "section-projeto";
+      "section-projeto"
+      "footer";
   }
 
   .titulo-sobre {

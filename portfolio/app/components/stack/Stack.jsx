@@ -4,7 +4,7 @@ export default function Stack() {
   return (
     <div className="div-principal">
       <section className="section-card">
-        <h2>Linguagens de programação e de marcação</h2>
+        <h2>Linguagens</h2>
         <ul>
           <li>
             <img src="/html5.svg" alt="HTML5" />
@@ -17,6 +17,9 @@ export default function Stack() {
           </li>
           <li>
             <img src="/css.svg" alt="CSS3" />
+          </li>
+          <li>
+            <img src="/mysql.svg" alt="MySql" />
           </li>
         </ul>
       </section>
@@ -36,16 +39,6 @@ export default function Stack() {
           </li>
           <li>
             <img src="/react.svg" alt="React.js" />
-          </li>
-        </ul>
-      </section>
-
-      <section className="section-card">
-        <h2>Ferramentas</h2>
-
-        <ul>
-          <li>
-            <img src="/mysql.svg" alt="MySql" />
           </li>
         </ul>
       </section>
