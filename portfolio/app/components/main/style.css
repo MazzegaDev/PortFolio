@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "titulo-sobre titulo-sobre"
+    "section-sobre section-imagem"
+    "titulo-stack titulo-stack"
+    "section-stack section-stack"
+    "titulo-projeto titulo-projeto"
+    "section-projeto section-projeto"
+    "footer footer";
+}
+
+.section-projeto {
+  grid-area: section-projeto;
+  /* border: 2px solid purple; */
+
+  display: flex;
+  justify-content: center;
+  /* margin: 1.5rem; */
+}
+
+.titulo-projeto {
+  grid-area: titulo-projeto;
+  display: flex;
+  justify-content: center;
+}
+.titulo-sobre {
+  grid-area: titulo-sobre;
+  display: flex;
+  justify-content: center;
+}
+.titulo-stack {
+  grid-area: titulo-stack;
+  display: flex;
+  justify-content: center;
+}
+.titulo-sobre h1, .titulo-projeto h1, .titulo-stack h1{
+  background-color: rgb(240, 240, 205);
+  border: 2px solid #c9dcb3;
+  border-radius: 25px;
+  padding: 0.5rem;
+}
+.section-stack {
+  grid-area: section-stack;
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid purple; */
+  justify-content: space-around;
+  /* background-color: rgba(240, 240, 205, 0.747); */
+}
+
+.section-imagem {
+  grid-area: section-imagem;
+  margin: 1.5rem;
+  display: flex;
+  /* border: 2px solid purple; */
+  justify-content: center;
+}
+
+.section-sobre {
+  /* border: 2px solid purple; */
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem;
+}
+
+.section-sobre > p {
+  font-size: 1.3rem;
+  display: flex;
+  align-self: center;
+  padding: 2rem;
+  text-align: center;
+  grid-area: section-sobre;
+  /* border: 2px solid purple; */
+}
+
+.section-imagem > img {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px; 
+  height: auto;
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "titulo-sobre"
+      "section-sobre"
+      "section-imagem"
+      "titulo-stack"
+      "section-stack"
+      "titulo-projeto"
+      "section-projeto"
+      "footer";
+  }
+
+  .titulo-sobre {
+    grid-area: titulo-sobre;
+    display: flex;
+    /* border: 2px solid black; */
+    margin: 0.5rem auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .titulo-stack {
+    grid-area: titulo-stack;
+    display: flex;
+    margin: 0.5rem auto;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .section-projeto {
+    grid-area: section-projeto;
+    /* border: 2px solid purple; */
+
+    display: flex;
+    justify-content: center;
+    /* margin: 1.5rem; */
+  }
+
+  .titulo-projeto {
+    grid-area: titulo-projeto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+  }
+  .section-stack {
+    grid-area: section-stack;
+    /* margin: 1rem; */
+    /* padding: 1rem; */
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* border: 2px solid purple; */
+    padding-inline: 0.5rem;
+    overflow: hidden;
+    justify-content: space-around;
+    /* background-color: rgba(240, 240, 205, 0.747); */
+  }
+  .section-imagem {
+    grid-area: section-imagem;
+    margin: 1rem;
+    display: flex;
+    /* border: 2px solid purple; */
+    justify-content: center;
+  }
+
+  .section-sobre {
+    /* border: 2px solid purple; */
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+  }
+
+  .section-sobre > p {
+    font-size: 1.2rem;
+    display: flex;
+    align-self: center;
+    padding: 2rem;
+    grid-area: section-sobre;
+    /* border: 2px solid purple; */
+  }
+
+  .section-imagem > img {
+    border-radius: 20px;
+    width: 350px;
+    height: 300px;
+  }
+}
