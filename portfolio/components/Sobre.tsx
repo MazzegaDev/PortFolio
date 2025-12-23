@@ -4,7 +4,7 @@ export default function SobreComp() {
          <h1 className="text-white text-center text-4xl py-2" id="sobre">
             Sobre mim
          </h1>
-         <div className="text-white max-md:flex max-md:flex-row max-md:gap-5 max-md:justify-center max-md:items-center p-2 flex gap-5 lg:justify-evenly  md:flex md:flex-row md:gap-5 md:justify-center md:items-center max-sm:min-w-full min-sm:min-w-full">
+         <div className="text-white max-md:flex max-md:flex-row max-md:gap-5 max-md:justify-center max-md:items-center p-2 flex gap-5 lg:justify-evenly  md:flex md:flex-row md:gap-5 md:justify-center md:items-center max-sm:min-w-full">
             <img
                src="foto2.png"
                alt="minha foto"
